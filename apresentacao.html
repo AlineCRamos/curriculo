@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trabalho HTML5/CSS</title>
+    <style>
+        /*mudando a fonte do trabalho pelo google fonts sem fazer download*/
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+       
+        body {
+
+            background-color: bisque;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px; /* tamanho da fonte padrão de 16px*/
+            /*espaçamento entre os limites da página e o texto, nos quatro lados do documento.*/
+            margin: 50px;
+        }
+
+        /*Aplicando uma cor diferente nos titulos h1 e h2*/
+        h1, h2{
+            color: rgb(33, 33, 181);
+        }
+        
+        /*Usando CSS para passar um traço inferior nos títulos de nível 2.*/
+        h2{
+            border-bottom: 1px solid rgb(117, 117, 182);
+        }
+            
+        
+        img{
+            border-radius: 10px; /*borda arredondada com css na foto*/
+            box-shadow: 1px 1px 8px black; /*sombra com css em volta da foto*/
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--1-Minha apresentação centralizado horizontalmente-->
+    <h1 style="text-align: center;">Aline Cristina S. Ramos</h1>
+
+    <!--2-paragráfo com negrito semântico,centralizado
+    horizontalmente -->
+    <p style="text-align: center;"><strong>33 anos,solteira, natural de Franca-SP</strong></p>
+
+    <!--3-Minha foto em um paragráfo horizontalmente-->
+    <p style="text-align: center;"><img src="foto/line300.jpg" alt="Minha foto"></p>
+
+    <!--4-Citação que eu gosto e o autor na última linha-->
+    <blockquote style="text-align: right;">
+        <!--alinhamento a direita-->
+        Feliz aquele que transfere <br>o que sabe e aprende<br> o que ensina.
+        <br><em>(Cora Coralina) </em>
+        <!--envelopamento com itálico semântico-->
+        <!-- <br> quebra de linha-->
+    </blockquote> <!-- Usar blockquote para citações longas-->
+
+
+    <!--5-Titulo nível 2-->
+    <h2>Sobre mim</h2>
+
+    <!--6-dois parágrafos sobre mim-->
+    <p>Sou uma pessoa de muitos sonhos, solteira e tenho vários gatos como animais de estimação.</p>
+    <p>Trabalho em uma área totalmente diferente do curso, porém meu objetivo é ingressar na área.</p>
+
+    <!--7-Minha escolaridade com uma lista não ordenada, quadrados como marcadores e links externos para 
+    entrar na página das escolas-->
+    <h2>Escolaridade</h2>
+    <ul type="square">
+        <li>Ensino Superior: <a href="https://www.unifran.edu.br" target="_blank" rel="external">Unifran, Franca/SP</a>
+        </li>
+        <li>Ensino médio: <a href="https://www.facebook.com/pages/Escola-Angelo-Gosuen/323903154404565" target="_blank"
+                rel="external">E.E Ângelo Gosuen, Franca/SP</a> </li>
+        <li>Ensino Fundamental: <a
+                href="https://www.facebook.com/people/EMEB-Professor-C%C3%A9sar-Augusto-de-Oliveira/100022213434595/"
+                target="_blank" rel="external">EMEB Prof. César Augusto de Oliveira, Franca/SP</a></li>
+    </ul>
+    <!--8-Titulo nivel 2 com itálico semântico, Meus hobbies-->
+    <h2><em>Hobbies</em></h2>
+    <!--Lista ordenada, tópicos em numeração -->
+    <ol type="1">
+        <li>Ir na academia</li>
+        <li>Dançar</li>
+        <li>Reunir as amigas</li>
+        <li>Curtir minha familia</li>
+        <li>Assistir filmes</li>
+    </ol>
+
+</body>
+
+</html>
